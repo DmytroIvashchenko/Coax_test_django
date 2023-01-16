@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+
+</head>
+
+
+
+<div class='alert alert-warning'>
+     {% for prod in product %}
+      <div class='alert alert-warning'>
+      <h3>{{ prod }}</h3>
+    {% endfor %}
+
+{% block menu %}
+{% for cat in category %}
+<a href="/orders/product/{{ cat.name }}" class ='mainmenu'> {{ cat }}</a>
+{% endfor %}
+<a href="/orders/product/" class ='mainmenu'> Back </a>
+{% endblock %}
+    </div>
+    </div>
+</html>
