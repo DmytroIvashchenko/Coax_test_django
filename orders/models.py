@@ -22,7 +22,7 @@ class Product(models.Model):
     user = models.ForeignKey(to=Customer, on_delete=models.CASCADE, related_name='user')
 
     def __str__(self):
-        return f'{self.name}'
+        return f'User: {self.user} product: {self.name} category: {self.category}'
 
 
 class Order(models.Model):
